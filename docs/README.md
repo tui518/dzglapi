@@ -1,14 +1,36 @@
-# 新版代账管理API
+#一、接口url
+>1、测试环境：http://test-jcyy.aierp.cn:8089/jinan/jrzt
+2、demo环境：https://es-demo.jchl.com/jinan/jrzt
+3、生产环境：https://es.jchl.com/jinan/jrzt
 
-## [文档目标](http://erpdoc.jchl.com/es/#/?id=文档目标)
+#二、参数说明：参数是拼接在url的形式
 
-> 本文档旨在描述一套开放API规范，以便外部产品的合作商，通过接口、页面嵌入等方式，与财税云平台的各项功能进行整合。
+```
+  username:登陆账号
+  pwd：密码
+  nsrsbh：纳税人识别号
+  khmc：客户名称
+  ssh： u6Ccx22usn80DcVnPgFBUSCC7OuR4olq/1DyHSAKMyLm7A/MSEprHdBgELiv2I/0（认证字符串） 
+```
 
-## [预期读者](http://erpdoc.jchl.com/es/#/?id=预期读者)
+#三、调用方式：GET请求
+##3.1 测试环境示例
+>http://test-jcyy.aierp.cn:8089/jinan/jrzt?username=15650148229&pwd=Admin1&nsrsbh=123123FFF123123123DD&khmc=刘七花&ssh=u6Ccx22usn80DcVnPgFBUSCC7OuR4olq/1DyHSAKMyLm7A/MSEprHdBgELiv2I/0
 
-> 金财代账云平台的合作商的开发者、管理者。
+##3.2 demo环境示例
+>https://es-demo.jchl.com/jinan/jrzt?username=15650148229&pwd=Admin1&nsrsbh=12345678901234567&khmc=XXXX&ssh=u6Ccx22usn80DcVnPgFBUSCC7OuR4olq/1DyHSAKMyLm7A/MSEprHdBgELiv2I/0
 
-## [参考资料](http://erpdoc.jchl.com/es/#/?id=参考资料)
+##3.3 生产环境示例
+>https://es.jchl.com/jinan/jrzt？username=15650148229&pwd=Admin1&nsrsbh=123123FFF123123123DD&khmc=刘七花&ssh=u6Ccx22usn80DcVnPgFBUSCC7OuR4olq/1DyHSAKMyLm7A/MSEprHdBgELiv2I/0
 
-> 参考金财互联公司的《开放API规范V1.0》，尽量保持接口规范的一致性、兼容性。
+#四、返回值说明
+```
+{
+    "code": "1", （1为成功 0为失败）
+    "url": "http://debug-dz.aierp.cn:8089/index.html?appkey=10001007&code=72b64641e7fb892561015b07a6d6d866&orgId=6024559123208192&orgName=%E5%88%98%E4%B8%83%E8%8A%B1"
+}
+```
 
+>**注意事项**
+4.1失败会返回具体原因；
+4.2建议传账号和密码时传管理员的账号和密码，密码为明文格式；
