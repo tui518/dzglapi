@@ -26,7 +26,7 @@
 
 ## 3.3 生产环境示例
 
->https://es.jchl.com/jinan/jrzt？username=15650148229&pwd=Admin1&nsrsbh=123123FFF123123123DD&khmc=刘七花&ssh=u6Ccx22usn80DcVnPgFBUSCC7OuR4olq/1DyHSAKMyLm7A/MSEprHdBgELiv2I/0
+>https://es.jchl.com/jinan/jrzt?username=15650148229&pwd=Admin1&nsrsbh=123123FFF123123123DD&khmc=刘七花&ssh=u6Ccx22usn80DcVnPgFBUSCC7OuR4olq/1DyHSAKMyLm7A/MSEprHdBgELiv2I/0
 
 # 四、返回值说明
 
